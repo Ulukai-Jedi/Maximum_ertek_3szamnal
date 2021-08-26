@@ -1,3 +1,4 @@
+//5. A program olvasson be három számot és adja meg a maximumát az értékeknek.
 #include <iostream>
 #include <vector>
 
@@ -19,5 +20,5 @@ int main() {
 			maximum = A[i];
 		}
 	}
-	std::cout << maximum << std::endl;
+	std::cout <<"A harom szam maximuma: "<< maximum << "."<< std::endl;
 }

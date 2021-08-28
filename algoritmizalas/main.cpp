@@ -13,9 +13,17 @@ int main() {
 	std::cin >> b;
 	std::cin >> c;
 
+	int i = 0;
+	while (a == b || a == c || b == c) {
+		std::cout << "Kerek harom szamot: " << std::endl;
+		std::cin >> a;
+		std::cin >> b;
+		std::cin >> c;
+	}
+
 	std::vector<int> A = {a,b,c};
 
-	for (int i = 1; i < A.size() ; i++) {
+	for (int i = 0; i < A.size() ; i++) {
 		if (A[i] > maximum) {
 			maximum = A[i];
 		}
